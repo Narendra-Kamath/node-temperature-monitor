@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Realtime temperature monitoring system using Arduino and Node.js">
+    <meta name="author" content="Narendra Kamath G">
+    <title>Node.js Temperature Monitor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Morris CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="index.html">Node.js Temperature Monitor</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="col-md-6">
+            <div id="line-example" style="min-height:250px;"></div>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Temperature</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<!-- Socket.io library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Morris chart library from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<!-- And our custom script ;) -->
+<script src="js/scripts.js"></script>
+
+</html>
